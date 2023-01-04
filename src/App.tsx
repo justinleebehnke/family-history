@@ -1,25 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { ReactElement, useState } from "react";
+import { Container } from "react-bootstrap";
+import "./App.css";
+import people from "./data/people.json";
+import Person from "./Person";
+import ListGroup from "react-bootstrap/ListGroup";
 
-function App() {
+function App(): ReactElement {
+  const [userId, setUser] = useState<number>();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container className="App">
+      {!!userId && <Person userId={userId} clearPersonId={() => setUser(0)} />}
+      {!userId && (
+        <ListGroup>
+          {people.map((person) => {
+            return (
+              <ListGroup.Item
+                key={person.id}
+                onClick={() => setUser(person.id)}
+              >
+                {person.name}
+              </ListGroup.Item>
+            );
+          })}
+        </ListGroup>
+      )}
+    </Container>
   );
 }
 
