@@ -1,25 +1,31 @@
 [
   {
     "id": 1,
-    "name": "Erna A. K. Behnke (Gruenhagen)",
+    "name": "Erna Anna Klara Behnke (Gruenhagen)",
     "profilePicture": "images/ErnaAnnaKlaraBehnke.jpeg",
     "assertions": [
       {
-        "sourceIds": [1, 2, 3, 5, 6],
+        "sourceIds": [1, 2, 3, 5, 6, 7],
         "title": "Birth",
-        "date": "1913-07-16",
+        "date": "1913 July 16",
         "location": "Carver, Minnesota, United States"
+      },
+      {
+        "sourceIds": [7],
+        "title": "Baptism",
+        "date": "1913 July 27",
+        "location": "Benton Township, Carver, Minnesota, United States"
       },
       {
         "sourceIds": [2],
         "title": "Residence",
-        "date": "1920-01-29",
+        "date": "1920 January 29",
         "location": "Benton Township, Carver, Minnesota, United States"
       },
       {
         "sourceIds": [3],
         "title": "Confirmation",
-        "date": "1927-04-10",
+        "date": "1927 April 10",
         "location": "Benton Township, Carver, Minnesota, United States"
       },
       {
@@ -32,7 +38,7 @@
       {
         "sourceIds": [5],
         "title": "Residence",
-        "date": "1940-04-18",
+        "date": "1940 April 18",
         "location": "St. Lawrence Township, Scott County, Minnesota"
       },
       {
@@ -45,13 +51,20 @@
   },
   {
     "id": 2,
-    "name": "Fred H. Behnke",
+    "name": "Friedrich (Fred) Franz Herm. Behnke",
+    "profilePicture": "images/FritzBehnkeProfile.jpeg",
     "assertions": [
       {
-        "sourceIds": [5, 6],
+        "sourceIds": [5, 6, 8],
         "title": "Birth",
-        "date": "1908",
+        "date": "1908 August 02",
         "location": "Michigan"
+      },
+      {
+        "sourceIds": [8],
+        "title": "Confirmation",
+        "date": "1922 April 9",
+        "location": "Trinity Lutheran Church in Belle Plaine, MN"
       },
       {
         "sourceIds": [4],
@@ -63,7 +76,7 @@
       {
         "sourceIds": [5],
         "title": "Residence",
-        "date": "1940-04-18",
+        "date": "1940 April 18",
         "location": "St. Lawrence Township, Scott County, Minnesota"
       },
       {
