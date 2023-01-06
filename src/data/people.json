@@ -86,5 +86,29 @@
         "location": "Schlegel Cemetery, Blakeley Township, Scott County, Minnesota, USA"
       }
     ]
+  },
+  {
+    "id": 3,
+    "name": "Ernst H. Gruenhagen",
+    "assertions": [
+      {
+        "sourceIds": [2],
+        "title": "Residence",
+        "date": "1920 January 29",
+        "location": "Benton Township, Carver, Minnesota, United States"
+      },
+      {
+        "sourceIds": [9],
+        "title": "Residence",
+        "date": "1940 April 1",
+        "location": "Anoka State Hospital, Anoka, Minnesota"
+      },
+      {
+        "sourceIds": [10],
+        "title": "Death",
+        "date": "1970 October 18",
+        "location": "Sibley County, Minnesota"
+      }
+    ]
   }
 ]
