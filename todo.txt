@@ -1,3 +1,9 @@
 Could be Census record or Ernst Gruenhagen 1905
 
 https://www.mnhs.org/people/statecensus/1916975
+
+Add Alvina's Death record
+Add Death certificate establishing Ernst's parents
+Add Dorothea
+Add Erna Gruenhagen parent assertion
+Develop the thing that will display parental relationships
