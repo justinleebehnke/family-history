@@ -78,5 +78,13 @@
     "title": "Death Record Index",
     "summary": "Ernst H. Gruenhagen October 18th 1970",
     "notes": "This is just an index to the record, it's not the actual record so additional information was not included beyond his name and the date"
+  },
+  {
+    "id": 11,
+    "downloadable": "images/1930CensusErnstGruenhagen.jpg",
+    "citation": "\"United States Census, 1930,\" database with images, FamilySearch (https://familysearch.org/ark:/61903/3:1:33S7-9RH1-LXB?cc=1810731&wc=QZFQ-DRR%3A648805901%2C651099801%2C651109301%2C1589282404 : 8 December 2015), Minnesota > Nicollet > St Peter > ED 18 > image 4 of 40; citing NARA microfilm publication T626 (Washington D.C.: National Archives and Records Administration, 2002).",
+    "title": "1930 Census Record",
+    "summary": "The Minnesota Hospital for Insane in St. Peter, Nicollet County, Minnesota. Enumerated on April 4th, 1930.",
+    "notes": "Ernst Gruenhagen is listed as a patient on line 99. It also states that he was married, that he was born in Minnesota and his mother and father were born in Germany. It says that he was 50 at the time of the Census which aligns with him being born at the end of 1879. It also says that he was a laundry helper in the institution."
   }
 ]
