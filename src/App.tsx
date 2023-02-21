@@ -51,6 +51,21 @@ const simpleInterviews = [
           { name: "Part 2", path: "media/DelaineRichards-Jan232023-Part2.mp3" },
         ],
       },
+      {
+        date: "26 Jan 2023",
+        description:
+          "The old farm and the difficulties around losing it talked about Erna's work, home life, what it was like",
+        downloadableFiles: [
+          {
+            name: "Part 1",
+            path: "media/DelaineRichards26-Jan-2023-Part1.mp3",
+          },
+          {
+            name: "Part 2",
+            path: "media/DelaineRichards26-Jan-2023-Part2.mp3",
+          },
+        ],
+      },
     ],
   },
 ];
