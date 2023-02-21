@@ -83,6 +83,26 @@ const simpleInterviews = [
       },
     ],
   },
+  {
+    interviewee: "Timoteo Monroy Cabrera (Spanish)",
+    interviews: [
+      {
+        date: "3 Feb 2023",
+        description:
+          "Flavio Monroy Ramirez, Juana Ramirez, Arcadio Monroy, their children, and his memories of them. Go to mass for San Augustine. Arcadio was a faithful farmer. We don't know much about the parents.",
+        downloadableFiles: [
+          {
+            name: "Part 1",
+            path: "media/TimoteoMonroyCabrera-20230203003-Part1.mp3",
+          },
+          {
+            name: "Part 2",
+            path: "media/TimoteoMonroyCabrera-20230203004-Part2.mp3",
+          },
+        ],
+      },
+    ],
+  },
 ];
 
 function App(): ReactElement {
