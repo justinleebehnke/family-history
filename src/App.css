@@ -12,3 +12,11 @@
 .card:last-of-type {
   margin-bottom: 1em;
 }
+
+.App {
+  margin-bottom: 5em;
+}
+
+.accordion {
+  margin-bottom: 2em;
+}

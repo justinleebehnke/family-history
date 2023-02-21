@@ -1,110 +1,99 @@
 import React, { ReactElement } from "react";
 import { Container } from "react-bootstrap";
 import "./App.css";
-import ListGroup from "react-bootstrap/ListGroup";
 import Accordion from "react-bootstrap/Accordion";
 
-const annotatedInterview = [
+const simpleInterviews = [
   {
-    date: "23 Jan 2023",
-    interviewee: "Delaine Richards",
-    part: "Part 1 of 2",
-    audioFile: "media/DelaineRichards-Jan232023-Part1.mp3",
-    chapters: [
+    interviewee: "Robert Lee Behnke",
+    interviews: [
       {
-        start: "00:00",
-        end: "04:00",
-        summary:
-          "Delaine and I discuss the current happenings of the family history project and a bit about the vision",
-      },
-      {
-        start: "04:00",
-        end: "10:20",
-        summary:
-          "Delaine shares what she remembers of her mom explaining what happened with Ernst Gruenhagen's hospitalization. As well as her own emotional feelings about it and the impact it had on other family members.",
-      },
-      {
-        start: "10:20",
-        end: "11:25",
-        summary: "Delaine and I discuss getting set up on FamilySearch",
-      },
-      {
-        start: "11:25",
-        end: "14:56",
-        summary:
-          "We discuss some things about whether I have certain documents or certain pictures",
-      },
-      {
-        start: "14:56",
-        end: "17:25",
-        summary:
-          "We discuss Ancestry and the types of records I can get and AncestryDNA. And the church in Benton Township.",
-      },
-      {
-        start: "17:25",
-        end: "22:28",
-        summary:
-          "I ask about Fred Mueller, Fritz' Maternal Grandpa. And I learn the information about the siblings of Augusta. Millie Laska Dad's mother's sister's daughter, which would make her Fritz's niece.",
-      },
-      {
-        start: "22:28",
-        end: "27:28",
-        summary:
-          "We talk more about potential documents that we can share with each other and the project.",
+        date: "7 Jan 2023",
+        description:
+          "Ernst's hospitalization, Dorothea's personality, the location of the Benton Church",
+        downloadableFiles: [
+          {
+            name: "Audio",
+            path: "public/media/BobBehnke-PhoneInterview-Jan7th2023.mp3",
+          },
+          {
+            name: "Transcription",
+            path: "media/BobBehnke-PhoneInterview-Jan7th2023.txt",
+          },
+        ],
       },
     ],
   },
   {
-    date: "23 Jan 2023",
-    interviewee: "Delaine Richards",
-    part: "Part 2 of 2",
-    audioFile: "media/DelaineRichards-Jan232023-Part2.mp3",
-    chapters: [
+    interviewee: "Delaine Doris Richards (Behnke)",
+    interviews: [
       {
-        start: "0:00",
-        end: "6:58",
-        summary:
-          "Further questions about Fred Mueller, where he lived in Belle Plaine and other documents and pictures that Delaine shared with me via text. Bernie Behnke, Aunt Martha, two older half brothers. Shipped by bought to Ida Miller the story.",
+        date: "10 Jan 2023",
+        description:
+          "Wrist injury, passing of Jim, Nelly nickname, High School Life, Alaska, Home Life",
+        downloadableFiles: [
+          {
+            name: "Part 1",
+            path: "media/DelaineRichards-Interview-10-Jan-2023-Part-1.mp3",
+          },
+          {
+            name: "Part 2",
+            path: "media/DelaineRichards-Interview-10-Jan-2023-Part-2.mp3",
+          },
+        ],
       },
       {
-        start: "6:58",
-        end: "8:51",
-        summary:
-          "Martha married Fred Hansen as well as James Parish. After the interview I found out from Dad that Martha took back Hansen as her married name after separating from James Parish. Death certificate for Fritz.",
-      },
-      {
-        start: "8:51",
-        end: "10:56",
-        summary:
-          "Frieda and Irma are Aunt Martha's Daughters. Bernie Behnke was Dad's 1st cousin from a half brother.",
-      },
-      {
-        start: "10:56",
-        end: "16:55",
-        summary:
-          "Bernice Lousie Johnson, this is when I found out about her. Bea did not stay with Fred Mueller. Martha and Dad went back to his house. It was a sensitive topic. Afraid that something like that would happen to other people. Winding down the interview. Esther Johnson, full cousin to your dad. 89 at the time she wrote this.",
+        date: "23 Jan 2023",
+        description:
+          "Ernst's hospitalization, project related discussions, Fred Mueller, Millie Laska, coordinating and reviewing documents, Bernie Behnke, Ida Miller, Fred Hansen, Aunt Martha, James Parrish, Frieda and Irma, Bernice Lousie Johnson, Bea Esther Johnson.",
+        downloadableFiles: [
+          { name: "Part 1", path: "media/DelaineRichards-Jan232023-Part1.mp3" },
+          { name: "Part 2", path: "media/DelaineRichards-Jan232023-Part2.mp3" },
+        ],
       },
     ],
-  },
-];
-
-const interviews = [
-  {
-    date: "7 Jan 2023",
-    interviewee: "Robert Behnke",
-    downloadable: "media/BobBehnke-PhoneInterview-Jan7th2023.txt",
-  },
-  {
-    date: "10 Jan 2023",
-    interviewee: "Delaine Richards",
-    downloadable: "media/DelaineDorisRichards-Interview10Jan2023.pdf",
   },
 ];
 
 function App(): ReactElement {
   return (
     <Container className="App">
+      <h3>Phone Interview Recordings</h3>
+      <Accordion>
+        {simpleInterviews.map((interview) => {
+          return (
+            <Accordion.Item
+              key={interview.interviewee}
+              eventKey={interview.interviewee}
+            >
+              <Accordion.Header>{interview.interviewee}</Accordion.Header>
+              <Accordion.Body>
+                <ol>
+                  {interview.interviews.map((session) => {
+                    return (
+                      <li key={session.date}>
+                        <p>Recorded on {session.date}</p>
+                        <p>Topics discussed: {session.description}</p>
+                        <p>Downloadable Media: </p>
+                        {session.downloadableFiles.map((file) => (
+                          <p key={file.name}>
+                            <a href={file.path} download>
+                              {file.name}
+                            </a>
+                          </p>
+                        ))}
+                      </li>
+                    );
+                  })}
+                </ol>
+              </Accordion.Body>
+            </Accordion.Item>
+          );
+        })}
+      </Accordion>
+
       <h3>Family History Research Project</h3>
+
       <h5>Welcome! Come and see!</h5>
       <p>
         To view the research work that I have done so far, you can follow these
@@ -147,55 +136,6 @@ function App(): ReactElement {
       </p>
 
       <p>Call or text me (Justin): 952-873-9729</p>
-
-      <h3>Phone Interview Recordings</h3>
-      <ListGroup>
-        {interviews.map((interview) => {
-          return (
-            <ListGroup.Item key={interview.interviewee + interview.date}>
-              <a href={interview.downloadable} download>
-                {interview.interviewee + " " + interview.date}
-              </a>
-            </ListGroup.Item>
-          );
-        })}
-        <Accordion>
-          {annotatedInterview.map((interview) => {
-            return (
-              <Accordion.Item
-                key={
-                  interview.interviewee +
-                  " " +
-                  interview.date +
-                  " " +
-                  interview.part
-                }
-                eventKey={interview.date + " " + interview.part}
-              >
-                <Accordion.Header>
-                  {interview.interviewee +
-                    " " +
-                    interview.date +
-                    " " +
-                    interview.part}
-                </Accordion.Header>
-                <Accordion.Body>
-                  <a href={interview.audioFile} download>
-                    Download Audio
-                  </a>
-                  {interview.chapters.map((chapter) => {
-                    return (
-                      <p key={chapter.start}>
-                        {chapter.start}-{chapter.end}: {chapter.summary}
-                      </p>
-                    );
-                  })}
-                </Accordion.Body>
-              </Accordion.Item>
-            );
-          })}
-        </Accordion>
-      </ListGroup>
     </Container>
   );
 }
