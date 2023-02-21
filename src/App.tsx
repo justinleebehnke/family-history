@@ -66,6 +66,21 @@ const simpleInterviews = [
           },
         ],
       },
+      {
+        date: "2 Feb 2023",
+        description:
+          "Pet pig Peter allowed in the house, questions about youth, hobbies puzzles, Sheephead game, Jim and Delaine courtship, religious drama. Jim was not into cards, Pat Grenwald moved to Mora, Delaine's time working in banks.",
+        downloadableFiles: [
+          {
+            name: "Part 1",
+            path: "media/DelaineRichards-20230202002-Part1.mp3",
+          },
+          {
+            name: "Part 2",
+            path: "media/DelaineRichards-20230202002-Part2.mp3",
+          },
+        ],
+      },
     ],
   },
 ];
