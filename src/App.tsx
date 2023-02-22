@@ -116,6 +116,21 @@ const simpleInterviews = [
           },
         ],
       },
+      {
+        date: "7 Feb 2023",
+        description:
+          "Asked about memories of his parents. And the work in his youth, and the culture in the area around where his family is. And the journey he took to bring goods to market.",
+        downloadableFiles: [
+          {
+            name: "Part 1",
+            path: "media/TimoteoMonroyCabrera-20230207007-Part1.mp3",
+          },
+          {
+            name: "Part 2",
+            path: "media/TimoteoMonroyCabrera-20230207007-Part2.mp3",
+          },
+        ],
+      },
     ],
   },
 ];
