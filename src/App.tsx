@@ -142,6 +142,21 @@ const simpleInterviews = [
           },
         ],
       },
+      {
+        date: "14 Feb 2023",
+        description:
+          "How his dad's arm was not usable after his dad got shot. And then what happened after that, the cows and everything, and where he went to Acapulco.",
+        downloadableFiles: [
+          {
+            name: "Part 1",
+            path: "media/TimoteoMonroyCabrera-20230214011-Part1.mp3",
+          },
+          {
+            name: "Part 2",
+            path: "media/TimoteoMonroyCabrera-20230214011-Part2.mp3",
+          },
+        ],
+      },
     ],
   },
 ];
