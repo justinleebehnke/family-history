@@ -195,6 +195,9 @@ function App(): ReactElement {
   return (
     <Container className="App">
       <h3>Phone Interview Recordings</h3>
+      <p>
+        These are recordings taken with members of my family share our history.
+      </p>
       <Accordion>
         {simpleInterviews.map((interview) => {
           return (
@@ -227,10 +230,13 @@ function App(): ReactElement {
           );
         })}
       </Accordion>
-
       <h3>Family History Research Project</h3>
-
-      <h5>Welcome! Come and see!</h5>
+      <p>
+        All of the work I do for family history is recorded on a free site
+        called FamilySearch. To view the family history, you'll need to create a
+        free account and then connect your account to one of our common
+        ancestors explained below.
+      </p>
       <p>
         To view the research work that I have done so far, you can follow these
         steps:
@@ -271,7 +277,26 @@ function App(): ReactElement {
         communicate.
       </p>
 
-      <p>Call or text me (Justin): 952-873-9729</p>
+      <p>
+        Call or text me (Justin): 952-873-9729 if you need help or if there is
+        anything I can do for you.
+      </p>
+
+      <p>
+        Also note, by going to{" "}
+        <a href="https://cards.justinbehnke.com">cards.justinbehnke.com</a> you
+        can play Sheepshead online which is a great way to connect with family
+        and preserve this significant part of our heritage.
+      </p>
+
+      <p className="footer">
+        The work of the family history research and recorded interviews is
+        dedicated to the memory of Elijah Robert Behnke.
+      </p>
+      <img
+        src="images/ElijahsTree.png"
+        alt="A graphic of the ancestors of Elijah Robert Behnke"
+      />
     </Container>
   );
 }
