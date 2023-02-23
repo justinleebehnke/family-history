@@ -157,6 +157,21 @@ const simpleInterviews = [
           },
         ],
       },
+      {
+        date: "16 Feb 2023",
+        description:
+          "We talk about the time after his dad got shot where he went to be away from them.",
+        downloadableFiles: [
+          {
+            name: "Part 1",
+            path: "media/TimoteoMonroyCabrera-20230216012-Part1.mp3",
+          },
+          {
+            name: "Part 2",
+            path: "media/TimoteoMonroyCabrera-20230216012-Part2.mp3",
+          },
+        ],
+      },
     ],
   },
 ];
