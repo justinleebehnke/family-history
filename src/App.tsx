@@ -187,6 +187,21 @@ const simpleInterviews = [
           },
         ],
       },
+      {
+        date: "23 Feb 2023",
+        description:
+          "We talked about the passing of Florencia, how they carried on after and before Eva came into the picture, the cities that they moved to before coming to the US.",
+        downloadableFiles: [
+          {
+            name: "Part 1",
+            path: "media/TimoteoMonroyCabrera-20230223002-Part1.mp3",
+          },
+          {
+            name: "Part 2",
+            path: "media/TimoteoMonroyCabrera-20230223002-Part2.mp3",
+          },
+        ],
+      },
     ],
   },
 ];
