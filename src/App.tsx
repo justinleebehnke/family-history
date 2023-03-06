@@ -14,11 +14,35 @@ const simpleInterviews = [
         downloadableFiles: [
           {
             name: "Audio",
-            path: "public/media/BobBehnke-PhoneInterview-Jan7th2023.mp3",
+            path: "media/BobBehnke-PhoneInterview-Jan7th2023.mp3",
           },
           {
             name: "Transcription",
             path: "media/BobBehnke-PhoneInterview-Jan7th2023.txt",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    interviewee: "Millie Laska",
+    interviews: [
+      {
+        date: "24 Feb 2023",
+        description:
+          "We talked about her relatives and her life and photos that she had there and we just got to know her a little bit.",
+        downloadableFiles: [
+          {
+            name: "Part 1",
+            path: "media/MillieLaska-20230224003-Part1.mp3",
+          },
+          {
+            name: "Part 2",
+            path: "media/MillieLaska-20230224003-Part2.mp3",
+          },
+          {
+            name: "Part 3",
+            path: "media/MillieLaska-20230224003-Part3.mp3",
           },
         ],
       },
@@ -199,6 +223,17 @@ const simpleInterviews = [
           {
             name: "Part 2",
             path: "media/TimoteoMonroyCabrera-20230223002-Part2.mp3",
+          },
+        ],
+      },
+      {
+        date: "01 Mar 2023",
+        description:
+          "We talked a bit about being in the US and recapped a little bit. Next visit will include more qualitative questions.",
+        downloadableFiles: [
+          {
+            name: "Recording",
+            path: "media/TimoteoMonroyCabrera-20230301005.mp3",
           },
         ],
       },
