@@ -237,6 +237,21 @@ const simpleInterviews = [
           },
         ],
       },
+      {
+        date: "06 Mar 2023",
+        description:
+          "Childhood spent running errands and not really playing, father did not emphasize education. Youth spent chasing girls not really thinking much about the future. Worked for many years as the secretary for judges and the president of the municipality.",
+        downloadableFiles: [
+          {
+            name: "Part 1",
+            path: "media/TimoteoMonroyCabrera-20230306006-Part-1.mp3",
+          },
+          {
+            name: "Part 2",
+            path: "media/TimoteoMonroyCabrera-20230306006-Part2.mp3",
+          },
+        ],
+      },
     ],
   },
 ];
